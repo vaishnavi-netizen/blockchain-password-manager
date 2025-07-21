@@ -1,0 +1,2 @@
+export const VAULT_MANAGER_ADDRESS = '0x4e183A38571d7D0b78e6d0C19312f408B9347f42';
+export const SEPOLIA_RPC_URL = 'https://sepolia.infura.io/v3/your-infura-project-id';  // Replace with your Infura project ID 

@@ -1,0 +1,23 @@
+{
+  "name": "aes-password-manager",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.5.0",
+    "ethers": "^6.13.5",
+    "react-scripts": "^5.0.1",
+    "tailwindcss": "^4.1.4"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.23.0"
+  }
+}

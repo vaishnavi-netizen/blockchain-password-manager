@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AES Password Manager</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .header img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 18px;
+    }
+    .status {
+      padding: 8px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      display: none;
+    }
+    .status.success {
+      background-color: #d4edda;
+      color: #155724;
+      display: block;
+    }
+    .status.error {
+      background-color: #f8d7da;
+      color: #721c24;
+      display: block;
+    }
+    button {
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    button:hover {
+      background-color: #3367d6;
+    }
+    button:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+    .password-list {
+      max-height: 200px;
+      overflow-y: auto;
+      margin-top: 15px;
+    }
+    .password-item {
+      padding: 8px;
+      border: 1px solid #ddd;
+      margin-bottom: 8px;
+      border-radius: 4px;
+    }
+    .password-item .actions {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 8px;
+    }
+    .password-item button {
+      width: auto;
+      margin-left: 8px;
+      margin-bottom: 0;
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+    .error-instructions {
+      margin-top: 10px;
+      padding-left: 20px;
+      font-size: 12px;
+    }
+    .error-instructions li {
+      margin-bottom: 5px;
+    }
+    .note {
+      font-size: 11px;
+      color: #666;
+      margin-top: 10px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+    <div class="header">
+      <h1>AES Password Manager</h1>
+    </div>
+    
+  <div id="status" class="status"></div>
+    
+  <button id="connectBtn">Connect to Password Manager</button>
+    
+  <div id="detectButton" style="display: none;">
+    <button id="detectFormBtn">Detect Login Forms</button>
+  </div>
+  
+  <div id="passwordList" class="password-list"></div>
+  
+  <script src="popup.js"></script>
+</body>
+</html> 
