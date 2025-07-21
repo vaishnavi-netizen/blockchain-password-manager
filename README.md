@@ -1,4 +1,4 @@
-# 🔐 AES Password Manager
+# 🔐 Blockchain-password-manager
 
 A blockchain-based decentralized password management system built using **Solidity**, **React**, **Tailwind CSS**, and **Hardhat**. This project allows users to securely store, access, and sync encrypted credentials across multiple devices using **Ethereum smart contracts** and **AES encryption**.
 
